@@ -15,9 +15,9 @@ func main() {
 	// Create a new Redis client.
 	// Adjust the Addr and Password fields as needed.
 	rdb := redis.NewClient(&redis.Options{
-		Addr:     "green-dew.agreeable-receipt-beta.svc.pipeops.internal:6379",
-		Password: "pipeops_user", // set your Redis password here
-		DB:       0,              // use default DB
+		Addr:     "bold-moon.meek-copper-beta.svc.pipeops.internal:6379",
+		Password: "pipeops", // set your Redis password here
+		DB:       0,         // use default DB
 	})
 
 	// Ping the Redis server to test the connection.
