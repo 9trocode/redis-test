@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"time"
 
 	"github.com/go-redis/redis/v8"
 )
@@ -27,4 +28,6 @@ func main() {
 	}
 
 	fmt.Printf("Connected to Redis: %s\n", pong)
+
+	time.Sleep(30 * time.Minute)
 }
